@@ -86,7 +86,7 @@ public class ExecuteKeywords {
 			break;
 			
 		case "Login":
-			Login.loginTheApplication();
+			Login.loginToTheApplication();
 			
 		
 		

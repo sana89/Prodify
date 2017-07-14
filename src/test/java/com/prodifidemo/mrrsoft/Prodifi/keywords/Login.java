@@ -5,7 +5,7 @@ import com.prodifidemo.mrrsoft.Prodifi.baseScript.PropertiesFile;
 
 public class Login {
 	
-	public static void loginTheApplication() throws Exception
+	public static void loginToTheApplication() throws Exception
 	{
 	ManageDrivers.OpenUrl("Chrome","http://172.17.2.182:8081", "testwe@yopmail.com", "123456");
 	SendKeys.sendText("Prodifi.rolesLandingPage.username","testwe@yopmail.com");
