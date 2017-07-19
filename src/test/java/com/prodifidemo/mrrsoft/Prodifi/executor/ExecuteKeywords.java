@@ -16,6 +16,8 @@ import com.prodifidemo.mrrsoft.Prodifi.keywords.PopUps;
 import com.prodifidemo.mrrsoft.Prodifi.keywords.RepeatedLocators;
 
 import com.prodifidemo.mrrsoft.Prodifi.keywords.SendKeys;
+import com.prodifidemo.mrrsoft.Prodifi.keywords.Tab;
+import com.prodifidemo.mrrsoft.Prodifi.keywords.ToolTipAssertion;
 
 public class ExecuteKeywords {
 	
@@ -87,6 +89,12 @@ public class ExecuteKeywords {
 			
 		case "Login":
 			Login.loginToTheApplication();
+			
+		case "ToolTipAssertion":
+			ToolTipAssertion.toolTipMessage(stepNumber, Locator, TestData1);
+			
+		case "Tab":
+			Tab.pressTab(Locator);
 			
 		
 		

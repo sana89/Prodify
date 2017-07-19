@@ -5,7 +5,7 @@
     <classes>
       <class name="com.prodifidemo.mrrsoft.Prodifi.executor.Execute">
         <methods>
-          <include name="getSteps" invocation-numbers="11"/>
+          <include name="getSteps" invocation-numbers="3 4 5"/>
         </methods>
       </class> <!-- com.prodifidemo.mrrsoft.Prodifi.executor.Execute -->
     </classes>

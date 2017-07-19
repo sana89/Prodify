@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
+<testng-results skipped="0" failed="3" ignored="0" total="7" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="74618" started-at="2017-07-14T11:59:56Z" finished-at="2017-07-14T12:01:11Z">
+  <suite name="Default suite" duration-ms="505403" started-at="2017-07-19T11:14:16Z" finished-at="2017-07-19T11:22:41Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="74618" started-at="2017-07-14T11:59:56Z" finished-at="2017-07-14T12:01:11Z">
+    <test name="Default test" duration-ms="505403" started-at="2017-07-19T11:14:16Z" finished-at="2017-07-19T11:22:41Z">
       <class name="com.prodifidemo.mrrsoft.Prodifi.executor.Execute">
-        <test-method status="PASS" signature="getSteps(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.prodifidemo.mrrsoft.Prodifi.executor.Execute@d8355a8]" name="getSteps" duration-ms="49975" started-at="2017-07-14T17:29:57Z" data-provider="hybridData" finished-at="2017-07-14T17:30:47Z">
+        <test-method status="PASS" signature="getSteps(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.prodifidemo.mrrsoft.Prodifi.executor.Execute@d8355a8]" name="getSteps" duration-ms="23380" started-at="2017-07-19T16:44:16Z" data-provider="hybridData" finished-at="2017-07-19T16:44:40Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Roles New Test1]]>
+                <![CDATA[Login Test1]]>
               </value>
             </param>
             <param index="1">
@@ -21,17 +21,17 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[Login to the Application and Navigate to Roles Page]]>
+                <![CDATA[Blank UserName and Password]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[Login into the Application]]>
+                <![CDATA[Open the Brower]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[Login]]>
+                <![CDATA[LaunchBrowser]]>
               </value>
             </param>
             <param index="5">
@@ -41,17 +41,17 @@
             </param>
             <param index="6">
               <value>
-                <![CDATA[NA]]>
+                <![CDATA[http://172.17.2.182:8081]]>
               </value>
             </param>
             <param index="7">
               <value>
-                <![CDATA[NA]]>
+                <![CDATA[Chrome]]>
               </value>
             </param>
             <param index="8">
               <value>
-                <![CDATA[NA]]>
+                <![CDATA[]]>
               </value>
             </param>
             <param index="9">
@@ -68,11 +68,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getSteps -->
-        <test-method status="PASS" signature="getSteps(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.prodifidemo.mrrsoft.Prodifi.executor.Execute@d8355a8]" name="getSteps" duration-ms="10848" started-at="2017-07-14T17:30:47Z" data-provider="hybridData" finished-at="2017-07-14T17:30:58Z">
+        <test-method status="PASS" signature="getSteps(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.prodifidemo.mrrsoft.Prodifi.executor.Execute@d8355a8]" name="getSteps" duration-ms="3144" started-at="2017-07-19T16:44:40Z" data-provider="hybridData" finished-at="2017-07-19T16:44:43Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Roles New Test1]]>
+                <![CDATA[Login Test1]]>
               </value>
             </param>
             <param index="1">
@@ -87,7 +87,7 @@
             </param>
             <param index="3">
               <value>
-                <![CDATA[Click on Settings icon]]>
+                <![CDATA[Click on username field]]>
               </value>
             </param>
             <param index="4">
@@ -97,7 +97,7 @@
             </param>
             <param index="5">
               <value>
-                <![CDATA[Prodify.rolesLandingPage.settings]]>
+                <![CDATA[Prodifi.login.username]]>
               </value>
             </param>
             <param index="6">
@@ -112,7 +112,7 @@
             </param>
             <param index="8">
               <value>
-                <![CDATA[NA]]>
+                <![CDATA[]]>
               </value>
             </param>
             <param index="9">
@@ -129,11 +129,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getSteps -->
-        <test-method status="PASS" signature="getSteps(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.prodifidemo.mrrsoft.Prodifi.executor.Execute@d8355a8]" name="getSteps" duration-ms="3660" started-at="2017-07-14T17:30:58Z" data-provider="hybridData" finished-at="2017-07-14T17:31:01Z">
+        <test-method status="PASS" signature="getSteps(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.prodifidemo.mrrsoft.Prodifi.executor.Execute@d8355a8]" name="getSteps" duration-ms="76" started-at="2017-07-19T16:44:43Z" data-provider="hybridData" finished-at="2017-07-19T16:44:43Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Roles New Test1]]>
+                <![CDATA[Login Test1]]>
               </value>
             </param>
             <param index="1">
@@ -148,17 +148,17 @@
             </param>
             <param index="3">
               <value>
-                <![CDATA[Click on Roles Field]]>
+                <![CDATA[Press tab to enter into password field]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[Click]]>
+                <![CDATA[Tab]]>
               </value>
             </param>
             <param index="5">
               <value>
-                <![CDATA[Prodify.rolesLandingPage.roles]]>
+                <![CDATA[Prodifi.login.username]]>
               </value>
             </param>
             <param index="6">
@@ -173,7 +173,7 @@
             </param>
             <param index="8">
               <value>
-                <![CDATA[NA]]>
+                <![CDATA[]]>
               </value>
             </param>
             <param index="9">
@@ -190,11 +190,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getSteps -->
-        <test-method status="PASS" signature="getSteps(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.prodifidemo.mrrsoft.Prodifi.executor.Execute@d8355a8]" name="getSteps" duration-ms="614" started-at="2017-07-14T17:31:01Z" data-provider="hybridData" finished-at="2017-07-14T17:31:02Z">
+        <test-method status="FAIL" signature="getSteps(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.prodifidemo.mrrsoft.Prodifi.executor.Execute@d8355a8]" name="getSteps" duration-ms="463314" started-at="2017-07-19T16:44:43Z" data-provider="hybridData" finished-at="2017-07-19T16:52:26Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Roles New Test2]]>
+                <![CDATA[Login Test1]]>
               </value>
             </param>
             <param index="1">
@@ -204,27 +204,27 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[Create a new role and check it in List Page ]]>
+                <![CDATA[NA]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[Click on New tab]]>
+                <![CDATA[Press tab to click on login icon]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[RepeatedLocators]]>
+                <![CDATA[Tab]]>
               </value>
             </param>
             <param index="5">
               <value>
-                <![CDATA[NA]]>
+                <![CDATA[Prodifi.login.password]]>
               </value>
             </param>
             <param index="6">
               <value>
-                <![CDATA[New]]>
+                <![CDATA[NA]]>
               </value>
             </param>
             <param index="7">
@@ -234,7 +234,7 @@
             </param>
             <param index="8">
               <value>
-                <![CDATA[NA]]>
+                <![CDATA[]]>
               </value>
             </param>
             <param index="9">
@@ -248,14 +248,48 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.prodifidemo.mrrsoft.Prodifi.keywords.Tab.pressTab(Tab.java:13)
+	at com.prodifidemo.mrrsoft.Prodifi.executor.ExecuteKeywords.ExecuteTheKeywords(ExecuteKeywords.java:97)
+	at com.prodifidemo.mrrsoft.Prodifi.executor.Execute.getSteps(Execute.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getSteps -->
-        <test-method status="PASS" signature="getSteps(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.prodifidemo.mrrsoft.Prodifi.executor.Execute@d8355a8]" name="getSteps" duration-ms="346" started-at="2017-07-14T17:31:02Z" data-provider="hybridData" finished-at="2017-07-14T17:31:02Z">
+        <test-method status="FAIL" signature="getSteps(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.prodifidemo.mrrsoft.Prodifi.executor.Execute@d8355a8]" name="getSteps" duration-ms="7076" started-at="2017-07-19T16:52:26Z" data-provider="hybridData" finished-at="2017-07-19T16:52:33Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Roles New Test2]]>
+                <![CDATA[Login Test1]]>
               </value>
             </param>
             <param index="1">
@@ -270,22 +304,22 @@
             </param>
             <param index="3">
               <value>
-                <![CDATA[Enter the data in Name Field]]>
+                <![CDATA[Check username validation]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[SendKeys]]>
+                <![CDATA[ToolTipAssertion]]>
               </value>
             </param>
             <param index="5">
               <value>
-                <![CDATA[Prodifi.rolesLandingPage.nameField]]>
+                <![CDATA[Prodifi.login.blankUsernameValidationMsg]]>
               </value>
             </param>
             <param index="6">
               <value>
-                <![CDATA[Business Analyst]]>
+                <![CDATA[NA]]>
               </value>
             </param>
             <param index="7">
@@ -295,7 +329,7 @@
             </param>
             <param index="8">
               <value>
-                <![CDATA[NA]]>
+                <![CDATA[]]>
               </value>
             </param>
             <param index="9">
@@ -309,14 +343,81 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=56.0.2924.87)
+  (Driver info: chromedriver=2.28.455520 (cc17746adff54984afff480136733114c6b3704b),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4.02 seconds
+Build info: version: '3.3.1', revision: '5234b325d5', time: '2017-03-10 09:10:29 +0000'
+System info: host: 'MSD001', ip: '172.17.2.178', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455520 (cc17746adff54984afff480136733114c6b3704b), userDataDir=C:\Users\SANA~1.AFR\AppData\Local\Temp\scoped_dir3732_31243}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=56.0.2924.87, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 6c0462ebe223210dad27e1eb58fe98f6
+*** Element info: {Using=xpath, value=(//span[@class='pim-Error'])[1]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=56.0.2924.87)
+  (Driver info: chromedriver=2.28.455520 (cc17746adff54984afff480136733114c6b3704b),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4.02 seconds
+Build info: version: '3.3.1', revision: '5234b325d5', time: '2017-03-10 09:10:29 +0000'
+System info: host: 'MSD001', ip: '172.17.2.178', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455520 (cc17746adff54984afff480136733114c6b3704b), userDataDir=C:\Users\SANA~1.AFR\AppData\Local\Temp\scoped_dir3732_31243}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=56.0.2924.87, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 6c0462ebe223210dad27e1eb58fe98f6
+*** Element info: {Using=xpath, value=(//span[@class='pim-Error'])[1]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:476)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at com.prodifidemo.mrrsoft.Prodifi.baseScript.PropertiesFile.getLocator(PropertiesFile.java:80)
+	at com.prodifidemo.mrrsoft.Prodifi.keywords.ToolTipAssertion.toolTipMessage(ToolTipAssertion.java:26)
+	at com.prodifidemo.mrrsoft.Prodifi.executor.ExecuteKeywords.ExecuteTheKeywords(ExecuteKeywords.java:94)
+	at com.prodifidemo.mrrsoft.Prodifi.executor.Execute.getSteps(Execute.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getSteps -->
-        <test-method status="PASS" signature="getSteps(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.prodifidemo.mrrsoft.Prodifi.executor.Execute@d8355a8]" name="getSteps" duration-ms="157" started-at="2017-07-14T17:31:02Z" data-provider="hybridData" finished-at="2017-07-14T17:31:02Z">
+        <test-method status="FAIL" signature="getSteps(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.prodifidemo.mrrsoft.Prodifi.executor.Execute@d8355a8]" name="getSteps" duration-ms="7047" started-at="2017-07-19T16:52:33Z" data-provider="hybridData" finished-at="2017-07-19T16:52:40Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Roles New Test2]]>
+                <![CDATA[Login Test1]]>
               </value>
             </param>
             <param index="1">
@@ -331,22 +432,22 @@
             </param>
             <param index="3">
               <value>
-                <![CDATA[Enter the data in Description Field]]>
+                <![CDATA[Check password validation]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[SendKeys]]>
+                <![CDATA[ToolTipAssertion]]>
               </value>
             </param>
             <param index="5">
               <value>
-                <![CDATA[Prodifi.rolesLandingPage.descriptionField]]>
+                <![CDATA[Prodifi.login.blankPasswordValidationMsg]]>
               </value>
             </param>
             <param index="6">
               <value>
-                <![CDATA[Testing description]]>
+                <![CDATA[NA]]>
               </value>
             </param>
             <param index="7">
@@ -356,7 +457,7 @@
             </param>
             <param index="8">
               <value>
-                <![CDATA[NA]]>
+                <![CDATA[]]>
               </value>
             </param>
             <param index="9">
@@ -370,14 +471,81 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=56.0.2924.87)
+  (Driver info: chromedriver=2.28.455520 (cc17746adff54984afff480136733114c6b3704b),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4.01 seconds
+Build info: version: '3.3.1', revision: '5234b325d5', time: '2017-03-10 09:10:29 +0000'
+System info: host: 'MSD001', ip: '172.17.2.178', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455520 (cc17746adff54984afff480136733114c6b3704b), userDataDir=C:\Users\SANA~1.AFR\AppData\Local\Temp\scoped_dir3732_31243}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=56.0.2924.87, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 6c0462ebe223210dad27e1eb58fe98f6
+*** Element info: {Using=xpath, value=(//span[@class='pim-Error'])[2]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=56.0.2924.87)
+  (Driver info: chromedriver=2.28.455520 (cc17746adff54984afff480136733114c6b3704b),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4.01 seconds
+Build info: version: '3.3.1', revision: '5234b325d5', time: '2017-03-10 09:10:29 +0000'
+System info: host: 'MSD001', ip: '172.17.2.178', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455520 (cc17746adff54984afff480136733114c6b3704b), userDataDir=C:\Users\SANA~1.AFR\AppData\Local\Temp\scoped_dir3732_31243}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=56.0.2924.87, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 6c0462ebe223210dad27e1eb58fe98f6
+*** Element info: {Using=xpath, value=(//span[@class='pim-Error'])[2]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:476)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at com.prodifidemo.mrrsoft.Prodifi.baseScript.PropertiesFile.getLocator(PropertiesFile.java:80)
+	at com.prodifidemo.mrrsoft.Prodifi.keywords.ToolTipAssertion.toolTipMessage(ToolTipAssertion.java:26)
+	at com.prodifidemo.mrrsoft.Prodifi.executor.ExecuteKeywords.ExecuteTheKeywords(ExecuteKeywords.java:94)
+	at com.prodifidemo.mrrsoft.Prodifi.executor.Execute.getSteps(Execute.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getSteps -->
-        <test-method status="PASS" signature="getSteps(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.prodifidemo.mrrsoft.Prodifi.executor.Execute@d8355a8]" name="getSteps" duration-ms="5061" started-at="2017-07-14T17:31:02Z" data-provider="hybridData" finished-at="2017-07-14T17:31:07Z">
+        <test-method status="PASS" signature="getSteps(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.prodifidemo.mrrsoft.Prodifi.executor.Execute@d8355a8]" name="getSteps" duration-ms="839" started-at="2017-07-19T16:52:40Z" data-provider="hybridData" finished-at="2017-07-19T16:52:41Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Roles New Test2]]>
+                <![CDATA[Login Test1]]>
               </value>
             </param>
             <param index="1">
@@ -392,17 +560,17 @@
             </param>
             <param index="3">
               <value>
-                <![CDATA[Click on Check Box]]>
+                <![CDATA[Close the browser]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[Click]]>
+                <![CDATA[CloseBrowser]]>
               </value>
             </param>
             <param index="5">
               <value>
-                <![CDATA[Prodifi.rolesLandingPage.localeAddCheckBox]]>
+                <![CDATA[NA]]>
               </value>
             </param>
             <param index="6">
@@ -417,134 +585,12 @@
             </param>
             <param index="8">
               <value>
-                <![CDATA[NA]]>
+                <![CDATA[]]>
               </value>
             </param>
             <param index="9">
               <value>
                 <![CDATA[]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getSteps -->
-        <test-method status="PASS" signature="getSteps(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.prodifidemo.mrrsoft.Prodifi.executor.Execute@d8355a8]" name="getSteps" duration-ms="133" started-at="2017-07-14T17:31:07Z" data-provider="hybridData" finished-at="2017-07-14T17:31:08Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Roles New Test2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[8.0]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[NA]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Click on Create Button]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[RepeatedLocators]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[NA]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Create]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[NA]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[NA]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getSteps -->
-        <test-method status="PASS" signature="getSteps(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.prodifidemo.mrrsoft.Prodifi.executor.Execute@d8355a8]" name="getSteps" duration-ms="3252" started-at="2017-07-14T17:31:08Z" data-provider="hybridData" finished-at="2017-07-14T17:31:11Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Roles New Test2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[9.0]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[NA]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Check if the created Role appears on the Roles Landing Page]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[AssertionInList]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[NA]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Analyst ]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[NA]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[Analyst 3]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[Pass]]>
               </value>
             </param>
             <param index="10">

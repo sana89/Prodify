@@ -15,13 +15,13 @@ public class PropertiesFile extends ManageDrivers{
 	
 	public static void loadPropertiesFile() throws Exception
 	{
-//		file = new File(System.getProperty("user.dir")+".//pageLibrary/Login/loginPage.properties");
-//		fileInputStream = new FileInputStream(file);
-//		Repository.load(fileInputStream);
-		
-		file = new File(System.getProperty("user.dir")+".//pageLibrary//Roles//rolesLandingPage.properties");
+		file = new File(System.getProperty("user.dir")+".//pageLibrary/Login/loginPage.properties");
 		fileInputStream = new FileInputStream(file);
 		Repository.load(fileInputStream);
+		
+//		file = new File(System.getProperty("user.dir")+".//pageLibrary//Roles//rolesLandingPage.properties");
+//		fileInputStream = new FileInputStream(file);
+//		Repository.load(fileInputStream);
 //		
 //		file = new File(System.getProperty("user.dir")+".//pageLibrary/PIM/ProductAttributes/Attributes/listPage.properties");
 //		fileInputStream = new FileInputStream(file);
