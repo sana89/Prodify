@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/3/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/10/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jul 19 16:44:16 IST 2017</td>
+<td>Started on:</td><td>Thu Jul 20 19:34:34 IST 2017</td>
 </tr>
-<tr><td>Total time:</td><td>505 seconds (505403 ms)</td>
+<tr><td>Total time:</td><td>25 seconds (25413 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,10 +75,112 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.prodifidemo.mrrsoft.Prodifi.executor.Execute.getSteps()'><b>getSteps</b><br>Test class: com.prodifidemo.mrrsoft.Prodifi.executor.Execute<br>Parameters: Login Test1, 4.0, NA, Press tab to click on login icon, Tab, Prodifi.login.password, NA, NA, , , </td>
+<td title='com.prodifidemo.mrrsoft.Prodifi.executor.Execute.getSteps()'><b>getSteps</b><br>Test class: com.prodifidemo.mrrsoft.Prodifi.executor.Execute<br>Parameters: Roles New Test1, 1.0, Login to the Application and Navigate to Roles Page, Open the Brower, LaunchBrowser, NA, NA, http://prodifitest.mrrsoft.com:8081, Chrome, , </td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: cannot get automation extension
+from chrome not reachable
+  (Session info: chrome=56.0.2924.87)
+  (Driver info: chromedriver=2.28.455520 (cc17746adff54984afff480136733114c6b3704b),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.04 seconds
+Build info: version: &apos;3.3.1&apos;, revision: &apos;5234b325d5&apos;, time: &apos;2017-03-10 09:10:29 +0000&apos;
+System info: host: &apos;MSD001&apos;, ip: &apos;172.17.2.178&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455520 (cc17746adff54984afff480136733114c6b3704b), userDataDir=C:\Users\SANA~1.AFR\AppData\Local\Temp\scoped_dir9372_3199}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=56.0.2924.87, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: e8ad3b4472c90a2cde694d0aca5f25fd
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:661)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:895)
+	at com.prodifidemo.mrrsoft.Prodifi.baseScript.ManageDrivers.LaunchChrome(ManageDrivers.java:71)
+	at com.prodifidemo.mrrsoft.Prodifi.baseScript.ManageDrivers.OpenUrl(ManageDrivers.java:27)
+	at com.prodifidemo.mrrsoft.Prodifi.executor.ExecuteKeywords.ExecuteTheKeywords(ExecuteKeywords.java:35)
+	at com.prodifidemo.mrrsoft.Prodifi.executor.Execute.getSteps(Execute.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1348916831", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1348916831'><pre>org.openqa.selenium.WebDriverException: unknown error: cannot get automation extension
+from chrome not reachable
+  (Session info: chrome=56.0.2924.87)
+  (Driver info: chromedriver=2.28.455520 (cc17746adff54984afff480136733114c6b3704b),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.04 seconds
+Build info: version: &apos;3.3.1&apos;, revision: &apos;5234b325d5&apos;, time: &apos;2017-03-10 09:10:29 +0000&apos;
+System info: host: &apos;MSD001&apos;, ip: &apos;172.17.2.178&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455520 (cc17746adff54984afff480136733114c6b3704b), userDataDir=C:\Users\SANA~1.AFR\AppData\Local\Temp\scoped_dir9372_3199}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=56.0.2924.87, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: e8ad3b4472c90a2cde694d0aca5f25fd
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:661)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:895)
+	at com.prodifidemo.mrrsoft.Prodifi.baseScript.ManageDrivers.LaunchChrome(ManageDrivers.java:71)
+	at com.prodifidemo.mrrsoft.Prodifi.baseScript.ManageDrivers.OpenUrl(ManageDrivers.java:27)
+	at com.prodifidemo.mrrsoft.Prodifi.executor.ExecuteKeywords.ExecuteTheKeywords(ExecuteKeywords.java:35)
+	at com.prodifidemo.mrrsoft.Prodifi.executor.Execute.getSteps(Execute.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>6</td>
+<td>com.prodifidemo.mrrsoft.Prodifi.executor.Execute@d8355a8</td></tr>
+<tr>
+<td title='com.prodifidemo.mrrsoft.Prodifi.executor.Execute.getSteps()'><b>getSteps</b><br>Test class: com.prodifidemo.mrrsoft.Prodifi.executor.Execute<br>Parameters: Roles New Test1, 2.0, NA, Enter correct username, SendKeys, Prodifi.rolesNew.username, NA, testwe@yopmail.com, NA, , </td>
 <td><div><pre>java.lang.NullPointerException
-	at com.prodifidemo.mrrsoft.Prodifi.keywords.Tab.pressTab(Tab.java:13)
-	at com.prodifidemo.mrrsoft.Prodifi.executor.ExecuteKeywords.ExecuteTheKeywords(ExecuteKeywords.java:97)
+	at com.prodifidemo.mrrsoft.Prodifi.keywords.SendKeys.sendText(SendKeys.java:14)
+	at com.prodifidemo.mrrsoft.Prodifi.executor.ExecuteKeywords.ExecuteTheKeywords(ExecuteKeywords.java:43)
 	at com.prodifidemo.mrrsoft.Prodifi.executor.Execute.getSteps(Execute.java:20)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -105,116 +207,10 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1688782916", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1688782916'><pre>java.lang.NullPointerException
-	at com.prodifidemo.mrrsoft.Prodifi.keywords.Tab.pressTab(Tab.java:13)
-	at com.prodifidemo.mrrsoft.Prodifi.executor.ExecuteKeywords.ExecuteTheKeywords(ExecuteKeywords.java:97)
-	at com.prodifidemo.mrrsoft.Prodifi.executor.Execute.getSteps(Execute.java:20)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-</pre></div></td>
-<td>463</td>
-<td>com.prodifidemo.mrrsoft.Prodifi.executor.Execute@d8355a8</td></tr>
-<tr>
-<td title='com.prodifidemo.mrrsoft.Prodifi.executor.Execute.getSteps()'><b>getSteps</b><br>Test class: com.prodifidemo.mrrsoft.Prodifi.executor.Execute<br>Parameters: Login Test1, 5.0, NA, Check username validation, ToolTipAssertion, Prodifi.login.blankUsernameValidationMsg, NA, NA, , , </td>
-<td><div><pre>org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=56.0.2924.87)
-  (Driver info: chromedriver=2.28.455520 (cc17746adff54984afff480136733114c6b3704b),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 4.02 seconds
-Build info: version: &apos;3.3.1&apos;, revision: &apos;5234b325d5&apos;, time: &apos;2017-03-10 09:10:29 +0000&apos;
-System info: host: &apos;MSD001&apos;, ip: &apos;172.17.2.178&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455520 (cc17746adff54984afff480136733114c6b3704b), userDataDir=C:\Users\SANA~1.AFR\AppData\Local\Temp\scoped_dir3732_31243}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=56.0.2924.87, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
-Session ID: 6c0462ebe223210dad27e1eb58fe98f6
-*** Element info: {Using=xpath, value=(//span[@class=&apos;pim-Error&apos;])[1]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:476)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at com.prodifidemo.mrrsoft.Prodifi.baseScript.PropertiesFile.getLocator(PropertiesFile.java:80)
-	at com.prodifidemo.mrrsoft.Prodifi.keywords.ToolTipAssertion.toolTipMessage(ToolTipAssertion.java:26)
-	at com.prodifidemo.mrrsoft.Prodifi.executor.ExecuteKeywords.ExecuteTheKeywords(ExecuteKeywords.java:94)
-	at com.prodifidemo.mrrsoft.Prodifi.executor.Execute.getSteps(Execute.java:20)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1552221437", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1552221437'><pre>org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=56.0.2924.87)
-  (Driver info: chromedriver=2.28.455520 (cc17746adff54984afff480136733114c6b3704b),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 4.02 seconds
-Build info: version: &apos;3.3.1&apos;, revision: &apos;5234b325d5&apos;, time: &apos;2017-03-10 09:10:29 +0000&apos;
-System info: host: &apos;MSD001&apos;, ip: &apos;172.17.2.178&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455520 (cc17746adff54984afff480136733114c6b3704b), userDataDir=C:\Users\SANA~1.AFR\AppData\Local\Temp\scoped_dir3732_31243}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=56.0.2924.87, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
-Session ID: 6c0462ebe223210dad27e1eb58fe98f6
-*** Element info: {Using=xpath, value=(//span[@class=&apos;pim-Error&apos;])[1]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:476)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at com.prodifidemo.mrrsoft.Prodifi.baseScript.PropertiesFile.getLocator(PropertiesFile.java:80)
-	at com.prodifidemo.mrrsoft.Prodifi.keywords.ToolTipAssertion.toolTipMessage(ToolTipAssertion.java:26)
-	at com.prodifidemo.mrrsoft.Prodifi.executor.ExecuteKeywords.ExecuteTheKeywords(ExecuteKeywords.java:94)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1280603381", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1280603381'><pre>java.lang.NullPointerException
+	at com.prodifidemo.mrrsoft.Prodifi.keywords.SendKeys.sendText(SendKeys.java:14)
+	at com.prodifidemo.mrrsoft.Prodifi.executor.ExecuteKeywords.ExecuteTheKeywords(ExecuteKeywords.java:43)
 	at com.prodifidemo.mrrsoft.Prodifi.executor.Execute.getSteps(Execute.java:20)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -242,34 +238,13 @@ Session ID: 6c0462ebe223210dad27e1eb58fe98f6
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
 </pre></div></td>
-<td>7</td>
+<td>0</td>
 <td>com.prodifidemo.mrrsoft.Prodifi.executor.Execute@d8355a8</td></tr>
 <tr>
-<td title='com.prodifidemo.mrrsoft.Prodifi.executor.Execute.getSteps()'><b>getSteps</b><br>Test class: com.prodifidemo.mrrsoft.Prodifi.executor.Execute<br>Parameters: Login Test1, 6.0, NA, Check password validation, ToolTipAssertion, Prodifi.login.blankPasswordValidationMsg, NA, NA, , , </td>
-<td><div><pre>org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=56.0.2924.87)
-  (Driver info: chromedriver=2.28.455520 (cc17746adff54984afff480136733114c6b3704b),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 4.01 seconds
-Build info: version: &apos;3.3.1&apos;, revision: &apos;5234b325d5&apos;, time: &apos;2017-03-10 09:10:29 +0000&apos;
-System info: host: &apos;MSD001&apos;, ip: &apos;172.17.2.178&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455520 (cc17746adff54984afff480136733114c6b3704b), userDataDir=C:\Users\SANA~1.AFR\AppData\Local\Temp\scoped_dir3732_31243}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=56.0.2924.87, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
-Session ID: 6c0462ebe223210dad27e1eb58fe98f6
-*** Element info: {Using=xpath, value=(//span[@class=&apos;pim-Error&apos;])[2]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:476)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at com.prodifidemo.mrrsoft.Prodifi.baseScript.PropertiesFile.getLocator(PropertiesFile.java:80)
-	at com.prodifidemo.mrrsoft.Prodifi.keywords.ToolTipAssertion.toolTipMessage(ToolTipAssertion.java:26)
-	at com.prodifidemo.mrrsoft.Prodifi.executor.ExecuteKeywords.ExecuteTheKeywords(ExecuteKeywords.java:94)
+<td title='com.prodifidemo.mrrsoft.Prodifi.executor.Execute.getSteps()'><b>getSteps</b><br>Test class: com.prodifidemo.mrrsoft.Prodifi.executor.Execute<br>Parameters: Roles New Test1, 3.0, NA, Enter correct password, SendKeys, Prodifi.rolesNew.password, NA, 123456, NA, , </td>
+<td><div><pre>java.lang.NullPointerException
+	at com.prodifidemo.mrrsoft.Prodifi.keywords.SendKeys.sendText(SendKeys.java:14)
+	at com.prodifidemo.mrrsoft.Prodifi.executor.ExecuteKeywords.ExecuteTheKeywords(ExecuteKeywords.java:43)
 	at com.prodifidemo.mrrsoft.Prodifi.executor.Execute.getSteps(Execute.java:20)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -296,31 +271,10 @@ Session ID: 6c0462ebe223210dad27e1eb58fe98f6
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1561745898", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1561745898'><pre>org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=56.0.2924.87)
-  (Driver info: chromedriver=2.28.455520 (cc17746adff54984afff480136733114c6b3704b),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 4.01 seconds
-Build info: version: &apos;3.3.1&apos;, revision: &apos;5234b325d5&apos;, time: &apos;2017-03-10 09:10:29 +0000&apos;
-System info: host: &apos;MSD001&apos;, ip: &apos;172.17.2.178&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455520 (cc17746adff54984afff480136733114c6b3704b), userDataDir=C:\Users\SANA~1.AFR\AppData\Local\Temp\scoped_dir3732_31243}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=56.0.2924.87, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
-Session ID: 6c0462ebe223210dad27e1eb58fe98f6
-*** Element info: {Using=xpath, value=(//span[@class=&apos;pim-Error&apos;])[2]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:476)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at com.prodifidemo.mrrsoft.Prodifi.baseScript.PropertiesFile.getLocator(PropertiesFile.java:80)
-	at com.prodifidemo.mrrsoft.Prodifi.keywords.ToolTipAssertion.toolTipMessage(ToolTipAssertion.java:26)
-	at com.prodifidemo.mrrsoft.Prodifi.executor.ExecuteKeywords.ExecuteTheKeywords(ExecuteKeywords.java:94)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1454026445", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1454026445'><pre>java.lang.NullPointerException
+	at com.prodifidemo.mrrsoft.Prodifi.keywords.SendKeys.sendText(SendKeys.java:14)
+	at com.prodifidemo.mrrsoft.Prodifi.executor.ExecuteKeywords.ExecuteTheKeywords(ExecuteKeywords.java:43)
 	at com.prodifidemo.mrrsoft.Prodifi.executor.Execute.getSteps(Execute.java:20)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -348,35 +302,455 @@ Session ID: 6c0462ebe223210dad27e1eb58fe98f6
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
 </pre></div></td>
-<td>7</td>
-<td>com.prodifidemo.mrrsoft.Prodifi.executor.Execute@d8355a8</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.prodifidemo.mrrsoft.Prodifi.executor.Execute.getSteps()'><b>getSteps</b><br>Test class: com.prodifidemo.mrrsoft.Prodifi.executor.Execute<br>Parameters: Login Test1, 1.0, Blank UserName and Password, Open the Brower, LaunchBrowser, NA, http://172.17.2.182:8081, Chrome, , , </td>
-<td></td>
-<td>23</td>
+<td>0</td>
 <td>com.prodifidemo.mrrsoft.Prodifi.executor.Execute@d8355a8</td></tr>
 <tr>
-<td title='com.prodifidemo.mrrsoft.Prodifi.executor.Execute.getSteps()'><b>getSteps</b><br>Test class: com.prodifidemo.mrrsoft.Prodifi.executor.Execute<br>Parameters: Login Test1, 2.0, NA, Click on username field, Click, Prodifi.login.username, NA, NA, , , </td>
-<td></td>
+<td title='com.prodifidemo.mrrsoft.Prodifi.executor.Execute.getSteps()'><b>getSteps</b><br>Test class: com.prodifidemo.mrrsoft.Prodifi.executor.Execute<br>Parameters: Roles New Test1, 4.0, NA, click on login, Click, Prodifi.rolesNew.loginbutton, NA, NA, NA, , </td>
+<td><div><pre>java.lang.NullPointerException
+	at com.prodifidemo.mrrsoft.Prodifi.keywords.Click.clickAction(Click.java:13)
+	at com.prodifidemo.mrrsoft.Prodifi.executor.ExecuteKeywords.ExecuteTheKeywords(ExecuteKeywords.java:48)
+	at com.prodifidemo.mrrsoft.Prodifi.executor.Execute.getSteps(Execute.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1068945248", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1068945248'><pre>java.lang.NullPointerException
+	at com.prodifidemo.mrrsoft.Prodifi.keywords.Click.clickAction(Click.java:13)
+	at com.prodifidemo.mrrsoft.Prodifi.executor.ExecuteKeywords.ExecuteTheKeywords(ExecuteKeywords.java:48)
+	at com.prodifidemo.mrrsoft.Prodifi.executor.Execute.getSteps(Execute.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
 <td>3</td>
 <td>com.prodifidemo.mrrsoft.Prodifi.executor.Execute@d8355a8</td></tr>
 <tr>
-<td title='com.prodifidemo.mrrsoft.Prodifi.executor.Execute.getSteps()'><b>getSteps</b><br>Test class: com.prodifidemo.mrrsoft.Prodifi.executor.Execute<br>Parameters: Login Test1, 3.0, NA, Press tab to enter into password field, Tab, Prodifi.login.username, NA, NA, , , </td>
-<td></td>
+<td title='com.prodifidemo.mrrsoft.Prodifi.executor.Execute.getSteps()'><b>getSteps</b><br>Test class: com.prodifidemo.mrrsoft.Prodifi.executor.Execute<br>Parameters: Roles New Test1, 5.0, NA, Click on Settings icon, Click, Prodifi.rolesNew.settings, NA, NA, NA, , </td>
+<td><div><pre>java.lang.NullPointerException
+	at com.prodifidemo.mrrsoft.Prodifi.keywords.Click.clickAction(Click.java:13)
+	at com.prodifidemo.mrrsoft.Prodifi.executor.ExecuteKeywords.ExecuteTheKeywords(ExecuteKeywords.java:48)
+	at com.prodifidemo.mrrsoft.Prodifi.executor.Execute.getSteps(Execute.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div><a href='#' onClick='toggleBox("stack-trace109069556", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace109069556'><pre>java.lang.NullPointerException
+	at com.prodifidemo.mrrsoft.Prodifi.keywords.Click.clickAction(Click.java:13)
+	at com.prodifidemo.mrrsoft.Prodifi.executor.ExecuteKeywords.ExecuteTheKeywords(ExecuteKeywords.java:48)
+	at com.prodifidemo.mrrsoft.Prodifi.executor.Execute.getSteps(Execute.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>3</td>
+<td>com.prodifidemo.mrrsoft.Prodifi.executor.Execute@d8355a8</td></tr>
+<tr>
+<td title='com.prodifidemo.mrrsoft.Prodifi.executor.Execute.getSteps()'><b>getSteps</b><br>Test class: com.prodifidemo.mrrsoft.Prodifi.executor.Execute<br>Parameters: Roles New Test1, 6.0, NA, Click on Roles Field, Click, Prodifi.rolesNew.roles, NA, NA, NA, , </td>
+<td><div><pre>java.lang.NullPointerException
+	at com.prodifidemo.mrrsoft.Prodifi.keywords.Click.clickAction(Click.java:13)
+	at com.prodifidemo.mrrsoft.Prodifi.executor.ExecuteKeywords.ExecuteTheKeywords(ExecuteKeywords.java:48)
+	at com.prodifidemo.mrrsoft.Prodifi.executor.Execute.getSteps(Execute.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1390301622", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1390301622'><pre>java.lang.NullPointerException
+	at com.prodifidemo.mrrsoft.Prodifi.keywords.Click.clickAction(Click.java:13)
+	at com.prodifidemo.mrrsoft.Prodifi.executor.ExecuteKeywords.ExecuteTheKeywords(ExecuteKeywords.java:48)
+	at com.prodifidemo.mrrsoft.Prodifi.executor.Execute.getSteps(Execute.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>3</td>
+<td>com.prodifidemo.mrrsoft.Prodifi.executor.Execute@d8355a8</td></tr>
+<tr>
+<td title='com.prodifidemo.mrrsoft.Prodifi.executor.Execute.getSteps()'><b>getSteps</b><br>Test class: com.prodifidemo.mrrsoft.Prodifi.executor.Execute<br>Parameters: Roles New Test1, 7.0, Check if the created role exist in Role Landing Page, Click on two dots, FindInList, NA, NA, Accountant 3, NA, , </td>
+<td><div><pre>java.lang.NullPointerException
+	at com.prodifidemo.mrrsoft.Prodifi.keywords.FindInList.verifyListPage(FindInList.java:16)
+	at com.prodifidemo.mrrsoft.Prodifi.executor.ExecuteKeywords.ExecuteTheKeywords(ExecuteKeywords.java:108)
+	at com.prodifidemo.mrrsoft.Prodifi.executor.Execute.getSteps(Execute.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1384563514", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1384563514'><pre>java.lang.NullPointerException
+	at com.prodifidemo.mrrsoft.Prodifi.keywords.FindInList.verifyListPage(FindInList.java:16)
+	at com.prodifidemo.mrrsoft.Prodifi.executor.ExecuteKeywords.ExecuteTheKeywords(ExecuteKeywords.java:108)
+	at com.prodifidemo.mrrsoft.Prodifi.executor.Execute.getSteps(Execute.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
 <td>0</td>
 <td>com.prodifidemo.mrrsoft.Prodifi.executor.Execute@d8355a8</td></tr>
 <tr>
-<td title='com.prodifidemo.mrrsoft.Prodifi.executor.Execute.getSteps()'><b>getSteps</b><br>Test class: com.prodifidemo.mrrsoft.Prodifi.executor.Execute<br>Parameters: Login Test1, 7.0, NA, Close the browser, CloseBrowser, NA, NA, NA, , , </td>
-<td></td>
-<td>0</td>
+<td title='com.prodifidemo.mrrsoft.Prodifi.executor.Execute.getSteps()'><b>getSteps</b><br>Test class: com.prodifidemo.mrrsoft.Prodifi.executor.Execute<br>Parameters: Roles New Test1, 8.0, NA, Click on Edit this Role, Click, Prodifi.rolesNew.editThisRole, NA, NA, NA, , </td>
+<td><div><pre>java.lang.NullPointerException
+	at com.prodifidemo.mrrsoft.Prodifi.keywords.Click.clickAction(Click.java:13)
+	at com.prodifidemo.mrrsoft.Prodifi.executor.ExecuteKeywords.ExecuteTheKeywords(ExecuteKeywords.java:48)
+	at com.prodifidemo.mrrsoft.Prodifi.executor.Execute.getSteps(Execute.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1242688388", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1242688388'><pre>java.lang.NullPointerException
+	at com.prodifidemo.mrrsoft.Prodifi.keywords.Click.clickAction(Click.java:13)
+	at com.prodifidemo.mrrsoft.Prodifi.executor.ExecuteKeywords.ExecuteTheKeywords(ExecuteKeywords.java:48)
+	at com.prodifidemo.mrrsoft.Prodifi.executor.Execute.getSteps(Execute.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>3</td>
+<td>com.prodifidemo.mrrsoft.Prodifi.executor.Execute@d8355a8</td></tr>
+<tr>
+<td title='com.prodifidemo.mrrsoft.Prodifi.executor.Execute.getSteps()'><b>getSteps</b><br>Test class: com.prodifidemo.mrrsoft.Prodifi.executor.Execute<br>Parameters: Roles New Test1, 9.0, NA, click on Product Add access, Click, Prodifi.rolesNew.localeAddCheckBox, NA, NA, NA, , </td>
+<td><div><pre>java.lang.NullPointerException
+	at com.prodifidemo.mrrsoft.Prodifi.keywords.Click.clickAction(Click.java:13)
+	at com.prodifidemo.mrrsoft.Prodifi.executor.ExecuteKeywords.ExecuteTheKeywords(ExecuteKeywords.java:48)
+	at com.prodifidemo.mrrsoft.Prodifi.executor.Execute.getSteps(Execute.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div><a href='#' onClick='toggleBox("stack-trace256346753", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace256346753'><pre>java.lang.NullPointerException
+	at com.prodifidemo.mrrsoft.Prodifi.keywords.Click.clickAction(Click.java:13)
+	at com.prodifidemo.mrrsoft.Prodifi.executor.ExecuteKeywords.ExecuteTheKeywords(ExecuteKeywords.java:48)
+	at com.prodifidemo.mrrsoft.Prodifi.executor.Execute.getSteps(Execute.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>3</td>
+<td>com.prodifidemo.mrrsoft.Prodifi.executor.Execute@d8355a8</td></tr>
+<tr>
+<td title='com.prodifidemo.mrrsoft.Prodifi.executor.Execute.getSteps()'><b>getSteps</b><br>Test class: com.prodifidemo.mrrsoft.Prodifi.executor.Execute<br>Parameters: Roles New Test1, 10.0, NA, Click on update button, Click, Prodifi.rolesNew.updateButton, NA, NA, NA, , </td>
+<td><div><pre>java.lang.NullPointerException
+	at com.prodifidemo.mrrsoft.Prodifi.keywords.Click.clickAction(Click.java:13)
+	at com.prodifidemo.mrrsoft.Prodifi.executor.ExecuteKeywords.ExecuteTheKeywords(ExecuteKeywords.java:48)
+	at com.prodifidemo.mrrsoft.Prodifi.executor.Execute.getSteps(Execute.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1201004240", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1201004240'><pre>java.lang.NullPointerException
+	at com.prodifidemo.mrrsoft.Prodifi.keywords.Click.clickAction(Click.java:13)
+	at com.prodifidemo.mrrsoft.Prodifi.executor.ExecuteKeywords.ExecuteTheKeywords(ExecuteKeywords.java:48)
+	at com.prodifidemo.mrrsoft.Prodifi.executor.Execute.getSteps(Execute.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>3</td>
 <td>com.prodifidemo.mrrsoft.Prodifi.executor.Execute@d8355a8</td></tr>
 </table><p>
 </body>

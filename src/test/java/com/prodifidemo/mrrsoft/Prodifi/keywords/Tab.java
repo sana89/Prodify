@@ -11,6 +11,7 @@ public class Tab {
 	{
 		WebElement webElement = PropertiesFile.getLocator(locator);
 		webElement.sendKeys(Keys.TAB);
+		webElement.sendKeys(Keys.ENTER);
 	}
 
 }

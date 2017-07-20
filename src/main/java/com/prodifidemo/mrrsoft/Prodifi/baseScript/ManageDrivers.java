@@ -10,7 +10,7 @@ import org.testng.Assert;
 public class ManageDrivers {
 public static WebDriver driver;
 	
-	public static WebDriver OpenUrl(String browser,String url, String username, String password) throws Exception
+	public static WebDriver OpenUrl(String browser,String url) throws Exception
 	{
 //		File pro = new File(".//configuration//config.property");
 //		FileInputStream fs = new FileInputStream(pro);
@@ -28,11 +28,11 @@ public static WebDriver driver;
 		}
 		if (browser=="FireFox")
 		{
-			driver = LaunchFirefox(url,username,password);
+			driver = LaunchFirefox(url);
 		}
 		if (browser=="IE")
 		{
-			driver = LaunchIE(url,username,password);
+			driver = LaunchIE(url);
 		}
 		
 		
@@ -44,7 +44,7 @@ public static WebDriver driver;
 		
 	}
 
-	public static WebDriver LaunchIE(String url,String username, String password) {
+	public static WebDriver LaunchIE(String url) {
 		
 		
 		
@@ -52,9 +52,9 @@ public static WebDriver driver;
 		return null;
 	}
 
-	private static WebDriver LaunchFirefox(String url,String username, String password) {
+	private static WebDriver LaunchFirefox(String url) {
 		WebDriver driver = new FirefoxDriver();
-		driver.get(username+":"+password+"@"+url);
+	//	driver.get(username+":"+password+"@"+url);
 		driver.manage().window().maximize();
 		return driver;
 	}

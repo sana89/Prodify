@@ -10,6 +10,8 @@ import com.prodifidemo.mrrsoft.Prodifi.keywords.ClearTextBox;
 import com.prodifidemo.mrrsoft.Prodifi.keywords.Click;
 import com.prodifidemo.mrrsoft.Prodifi.keywords.CloseBrowser;
 import com.prodifidemo.mrrsoft.Prodifi.keywords.DropDown;
+import com.prodifidemo.mrrsoft.Prodifi.keywords.FindInList;
+import com.prodifidemo.mrrsoft.Prodifi.keywords.IsDisabled;
 import com.prodifidemo.mrrsoft.Prodifi.keywords.IsDisplayed;
 import com.prodifidemo.mrrsoft.Prodifi.keywords.Login;
 import com.prodifidemo.mrrsoft.Prodifi.keywords.PopUps;
@@ -21,7 +23,7 @@ import com.prodifidemo.mrrsoft.Prodifi.keywords.ToolTipAssertion;
 
 public class ExecuteKeywords {
 	
-	public static void ExecuteTheKeywords(String testCase, String stepNumber, String testCaseName, String testStep, String keyword, String Locator, String TestData1,String TestData2,String TestData3,String TestData4,String Status) throws Exception
+	public static void ExecuteTheKeywords(String testCase, String stepNumber, String testCaseName, String testStep, String keyword, String Locator1, String Locator2,String TestData1,String TestData2,String TestData3,String Status) throws Exception
 	{
 		System.out.println("Executing step "+"-----"+testCase+"----"+stepNumber +"------"+testCaseName+"------"+testStep+"-----------");
         
@@ -30,7 +32,7 @@ public class ExecuteKeywords {
 		{
 		
 		case "LaunchBrowser":
-			ManageDrivers.OpenUrl(TestData2, TestData1, TestData3, TestData4);
+			ManageDrivers.OpenUrl(TestData2, TestData1);
 			break;
 			
 		case "CloseBrowser":
@@ -38,17 +40,17 @@ public class ExecuteKeywords {
 		    break;
 			
 		case "SendKeys":
-		    SendKeys.sendText(Locator,TestData1);
+		    SendKeys.sendText(Locator1,TestData1);
 		    break;
 		    
 		
 		case "Click":
-		   Click.clickAction(Locator);
+		   Click.clickAction(Locator1);
 		    break;	
 		    
 		   
 		case "Assertion":
-		    Assertion.validateSuccesMsg(stepNumber, Locator, TestData1);
+		    Assertion.validateSuccesMsg(stepNumber, Locator1, TestData1);
 		    break;
 		    
 		case "AssertPageTitle":
@@ -56,15 +58,15 @@ public class ExecuteKeywords {
 		    
 		
 		case "DropDown":
-			DropDown.handleDropDown(Locator, TestData1);
+			DropDown.handleDropDown(Locator1, TestData1);
 			break;
 			
 		case "Action":
-			Action.mouseHoverAction(Locator);
+			Action.mouseHoverAction(Locator1);
 			break;
 		  
 		case "Calender":
-			Calender.selectDate(TestData1, Locator);
+			Calender.selectDate(TestData1, Locator1);
 			break;
 		
 		case "PopUps":
@@ -84,17 +86,27 @@ public class ExecuteKeywords {
 			break;
 			
 		case "ClearTextBox":
-			ClearTextBox.deleteTextBox(Locator);
+			ClearTextBox.deleteTextBox(Locator1);
 			break;
 			
 		case "Login":
 			Login.loginToTheApplication();
 			
 		case "ToolTipAssertion":
-			ToolTipAssertion.toolTipMessage(stepNumber, Locator, TestData1);
+			ToolTipAssertion.toolTipMessage(stepNumber, Locator1, Locator2, TestData1);
+			break;
 			
 		case "Tab":
-			Tab.pressTab(Locator);
+			Tab.pressTab(Locator1);
+			break;
+			
+		case "IsDisabled":
+			IsDisabled.fieldIsDisabled(stepNumber, Locator1, TestData1);
+			break;
+			
+		case "FindInList":
+			FindInList.verifyListPage(Locator1,TestData1);
+			break;
 			
 		
 		

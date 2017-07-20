@@ -17,11 +17,12 @@ public class AssertionInList extends PropertiesFile {
 	public static void Assert(String step, String data) throws Exception
 	{
 		System.out.println(1);
-		int stepNo = ConvertDataType.getNumber(step);
+		int stepN = ConvertDataType.getNumber(step);
+		int stepNo= stepN+1;
 		System.out.println(stepNo);
 		
 		Thread.sleep(3000);
-		WebElement element = driver.findElement(By.xpath("//*[(text()='"+data+""+"')]"));
+		WebElement element = driver.findElement(By.xpath("//*[(text()='"+data+" ')]"));
 		Boolean result = element.isDisplayed();
 		System.out.println(result);
 		if(result==true)
@@ -37,7 +38,7 @@ public class AssertionInList extends PropertiesFile {
 			
 			String actRes = element.getText();
 			System.out.println(actRes);
-			ExcelWrite.WriteTheExcel(actRes, stepNo, 8);
+			ExcelWrite.WriteTheExcel(actRes, stepNo, 9);
 			System.out.println(actRes);
 		}
 			
@@ -51,11 +52,11 @@ public class AssertionInList extends PropertiesFile {
 		{
 			System.out.println(result);
 			Assert.assertTrue(result);
-			ExcelWrite.WriteTheExcel( "Pass", stepNo, 9);
+			ExcelWrite.WriteTheExcel( "Pass", stepNo, 10);
 		}
 		catch(AssertionError er)
 		{
-			ExcelWrite.WriteTheExcel( "Fail", stepNo, 9);
+			ExcelWrite.WriteTheExcel( "Fail", stepNo, 10);
 		}
 		
 	}

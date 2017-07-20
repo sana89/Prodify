@@ -15,13 +15,13 @@ public class PropertiesFile extends ManageDrivers{
 	
 	public static void loadPropertiesFile() throws Exception
 	{
-		file = new File(System.getProperty("user.dir")+".//pageLibrary/Login/loginPage.properties");
-		fileInputStream = new FileInputStream(file);
-		Repository.load(fileInputStream);
-		
-//		file = new File(System.getProperty("user.dir")+".//pageLibrary//Roles//rolesLandingPage.properties");
+//		file = new File(System.getProperty("user.dir")+".//pageLibrary/Login/loginPage.properties");
 //		fileInputStream = new FileInputStream(file);
 //		Repository.load(fileInputStream);
+		
+		file = new File(System.getProperty("user.dir")+".//pageLibrary/Roles/rolesNew.properties");
+		fileInputStream = new FileInputStream(file);
+		Repository.load(fileInputStream);
 //		
 //		file = new File(System.getProperty("user.dir")+".//pageLibrary/PIM/ProductAttributes/Attributes/listPage.properties");
 //		fileInputStream = new FileInputStream(file);
@@ -40,10 +40,10 @@ public class PropertiesFile extends ManageDrivers{
 //		Repository.load(fileInputStream);
 	}
 	
-	public static WebElement getLocator(String locator1) throws Exception
+	public static WebElement getLocator(String locatorElement) throws Exception
 	{
 		loadPropertiesFile();
-		String locator=Repository.getProperty(locator1);
+		String locator=Repository.getProperty(locatorElement);
 		String locatorType = locator.split("_")[0];
 		String locatorValue = locator.split("_")[1];
 		

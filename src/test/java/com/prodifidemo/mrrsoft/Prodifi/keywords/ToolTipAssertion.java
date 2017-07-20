@@ -1,8 +1,10 @@
 package com.prodifidemo.mrrsoft.Prodifi.keywords;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import com.prodifidemo.mrrsoft.Prodifi.baseScript.ManageDrivers;
 import com.prodifidemo.mrrsoft.Prodifi.baseScript.PropertiesFile;
@@ -11,8 +13,10 @@ import com.prodifidemo.mrrsoft.Prodifi.utilities.ExcelWrite;
 
 public class ToolTipAssertion extends ManageDrivers {
 	
-	public static void toolTipMessage(String step, String locator, String testdata1) throws Exception
+	
+	public static void toolTipMessage(String step, String locator1, String locator2, String testdata1) throws Exception
 	{
+
 		//Convert String step into number
 		int stepNo = ConvertDataType.getNumber(step);
 		
@@ -23,13 +27,16 @@ public class ToolTipAssertion extends ManageDrivers {
 		Actions action = new Actions(driver);
 		
 		// Find the tooltip xpath
-		 WebElement tooltip = PropertiesFile.getLocator(locator);
+		 WebElement tooltip = PropertiesFile.getLocator(locator1);
 		 
 		// Mouse hover to that text message
 		 action.moveToElement(tooltip).perform();
 		 
+		 //Find the tooltip message xpath
+		 WebElement msg =PropertiesFile.getLocator(locator2);
+		 
 		// Extract text from tooltip
-		 String tooltip_msg = tooltip.getText();
+		 String tooltip_msg = msg.getAttribute("data-tooltip");
 		 
 		 //Write the tooltip message back to excel
 		 ExcelWrite.WriteTheExcel(tooltip_msg, stepNo, 9);
