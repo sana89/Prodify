@@ -30,6 +30,6 @@ public class FindInList extends ManageDrivers {
 	    System.out.println("count is "+x);
 	    Thread.sleep(2000);
 	    
-	   driver.findElement(By.xpath("(//*[@class='organization-name'])"+"["+x+"]"+"/following::button[1]"));
+	   driver.findElement(By.xpath("(//*[@class='organization-name'])["+x+"]/following::button[1]")).click();
 	}
 }

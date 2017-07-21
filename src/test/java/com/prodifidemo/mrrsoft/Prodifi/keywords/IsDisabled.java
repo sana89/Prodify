@@ -18,10 +18,8 @@ public class IsDisabled extends ManageDrivers {
 	{
 		
 	
-		int stepNo = ConvertDataType.getNumber(step);
-		
-		System.out.println(stepNo);
-		//stepNo = stepNo+2;
+		int stepNumber = ConvertDataType.getNumber(step);
+		int stepNo= stepNumber+1;
 		
 		WebElement element = PropertiesFile.getLocator(locator);
 		

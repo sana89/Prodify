@@ -105,7 +105,7 @@ public class ExecuteKeywords {
 			break;
 			
 		case "FindInList":
-			FindInList.verifyListPage(Locator1,TestData1);
+			FindInList.verifyListPage(Locator1, TestData1);
 			break;
 			
 		

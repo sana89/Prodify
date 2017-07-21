@@ -18,7 +18,9 @@ public class ToolTipAssertion extends ManageDrivers {
 	{
 
 		//Convert String step into number
-		int stepNo = ConvertDataType.getNumber(step);
+		int stepNumber = ConvertDataType.getNumber(step);
+		
+		int stepNo = stepNumber + 1;
 		
 		System.out.println(stepNo);
 		Thread.sleep(3000);

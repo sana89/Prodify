@@ -7,7 +7,7 @@ public class Login {
 	
 	public static void loginToTheApplication() throws Exception
 	{
-	ManageDrivers.OpenUrl("Chrome","http://172.17.2.182:8081");
+	ManageDrivers.OpenUrl("Chrome","http://prodifitest.mrrsoft.com:8081");
 	SendKeys.sendText("Prodifi.rolesLandingPage.username","testwe@yopmail.com");
 	SendKeys.sendText("Prodifi.rolesLandingPage.password", "123456");
 	Click.clickAction("Prodifi.rolesLandingPage.loginIcon");
